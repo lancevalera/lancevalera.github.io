@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .header {
@@ -115,6 +115,14 @@ span {
 .material-icons{
     display: inline-flex;
     vertical-align: top;
+}
+
+h3, h4 {
+      font-weight: 300 !important;
+}
+
+h3 {
+  font-size: 324%;
 }
 
 .md-48 {     font-size: 150%;
