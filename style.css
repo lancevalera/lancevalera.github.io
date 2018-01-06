@@ -1,0 +1,128 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  background: url('./assets/back.jpeg') center / cover;
+  height: 100%;
+  width: 100%;
+}
+.header .mdl-layout__header,
+.header .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: black;
+}
+
+.stuff {
+  background: black !important;
+opacity: 0.6 !important;
+}
+
+header {
+  background: black;
+opacity: 0.5;
+}
+
+.centercontent {
+  background: white;
+opacity: 0.7;
+padding: 4%;
+  color: black;
+text-align: center;
+position: relative;
+top: 25%;
+width: 50%;
+margin: auto;
+}
+
+.centercontent > p {
+  font-size: 28px;
+}
+
+.aboutcontent {
+  margin: auto;
+text-align: center;
+}
+
+.imagetext {
+  width: 50%;
+}
+
+.adjustwidth {
+  width: 70%;
+margin: auto;
+}
+
+.education {
+  width: 70%;
+  margin: auto;
+}
+
+.experience {
+  margin: auto;
+}
+
+.skillscontent {
+}
+
+.name {
+  font-size: 350% !important;
+  border-bottom: 1px solid;
+}
+
+ul > li {
+  padding-bottom: 1%;
+  padding-top: 1%;
+      font-weight: bold;
+}
+
+.skills {
+  list-style-type:none;
+  font-size: 105%;
+}
+
+.skills > li:hover {
+  background: #F5F5F5;
+  font-size: 110%;
+}
+
+.mdl-navigation__link:hover{
+  text-decoration: underline;
+  color: white;
+  opacity: 1;
+}
+
+ul {
+  padding-left: 0%;
+}
+
+.textcolor {
+  color: #FF533d;
+}
+
+span {
+  float: right;
+  color: #FF533d;
+  margin-right: 2%
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 30px; line-height:52px;}
+
+.material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.md-48 {     font-size: 150%;
+    line-height: 220%;}
+
+    ul#horizontal-list {
+	list-style: none;
+	}
+	ul#horizontal-list li {
+
+	}
