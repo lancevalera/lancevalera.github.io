@@ -1,137 +1,174 @@
 <html>
-  <head>
-    <title> Lance Valera </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Lance Valera, Valera, Lance, lance valera, valera, lance">
-    <meta name='description' content="Lance Valera's website / resume">
-    <meta name="author" content="Lance Valera">
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel='stylesheet' href='./style.css'>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+27px" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./src.js"></script>
-  </head>
-  <body>
-    <div class="header">
-      <header class="stuff mdl-layout__header mdl-layout__header--transparent">
-        <div class="mdl-layout__header-row">
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" style="
-    opacity: 3;
-" href="#about">About Me</a>
-            <a class="mdl-navigation__link" style="
-    opacity: 3;
-" href="#journey">Journey</a>
-            <a class="mdl-navigation__link" style="
-    opacity: 3;
-"  href="#skills">Abilities</a>
-<a class="mdl-navigation__link" style="
-opacity: 3;
-"  href="#Contact">Contact</a>
-          </nav>
-        </div>
-      </header>
-      <div class="centercontent">
-        <h1 class='name'> LANCE VALERA </h1>
-        <p style='margin-bottom: 24px;'> Student and web developer </p>
+
+<head>
+  <title> Lance Valera </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Lance Valera, Valera, Lance, lance valera, valera, lance">
+  <meta name='description' content="Lance Valera's website / resume">
+  <meta name="author" content="Lance Valera">
+  <meta charset="UTF-8">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='./assets/now-ui-kit.css'>
+  <script src='./assets/now-ui-kit.js'></script>
+  <link rel='stylesheet' href='./style.css'>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <div class="container">
+      <div class="navbar-translate">
+        <p class="navbar-brand" href="#pablo">
+          Lance Valera
+        </p>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+       	          <span class="navbar-toggler-bar bar1"></span>
+    	            <span class="navbar-toggler-bar bar2"></span>
+    	            <span class="navbar-toggler-bar bar3"></span>
+     	    </button>
+
+
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navigation" *ngIf="router.url != '/login' && router.url != '/register'">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#AboutMe">
+                            About Me
+                        </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#EnE">Experience and Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href='#Skills'>Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href='contact'>Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <main>
-      <div class='aboutme' id='about' style='padding: 3% 3% 3% 3%;'>
-        <div class='aboutcontent'>
-          <h3 class='textcolor'> About Me </h3>
-          <hr class='adjustwidth'>
-          <div class='mdl-grid imagetext'>
-            <div class='mdl-cell mdl-cell--6-col' style='    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%;'>
-              <img src='./assets/profpic.jpg' style='width: 100%;
-    height: 150%;
-    margin: -75px 0 0 -1px;'/>
-            </div>
-            <div class='mdl-cell mdl-cell--6-col'>
-              <p style="font-size: 114%; text-align: left;">
-                <strong class='textcolor' style="font-size: 130%">
-                 Hello!
-                </strong>
-                I'm a second year college student currently studies about computer programming at Seneca College.
-                I have a keen interest in web development and I want to pursue it further.
-                I also like playing sports, reading, and watching the TV shows!
-              </p>
-            </div>
-          </div>
+  </nav>
+
+
+
+  <div class="page-header">
+    <div class="page-header-image" style="background-image:url(./assets/back.jpeg)"></div>
+    <div class="container">
+      <div class="content-center">
+        <h1> LANCE VALERA </h1>
+        <hr>
+        <h5> Student and Web Developer </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class='container' id='AboutMe'>
+    <div class='row content-center' style='padding-top: 5%; padding-bottom: 2%;'>
+      <h3 style='margin: auto'> About Me </h3>
+    </div>
+    <div class='row'>
+    <span style='margin: auto'> The things I'm into </span>
+  </div>
+
+    <hr>
+    <div class='row' style='padding-top: 2%; padding-bottom: 2%;'>
+      <div class='col-sm-4' style=''>
+        <div class='profpic'>
+          <img src='./assets/profpic.jpg' alt='Image' class='rounded-circle' style="" />
         </div>
       </div>
+      <div class='col-sm-8'>
+        <p class='vertalign'>
 
-      <div class='journey' id='journey' style='padding: 3% 3% 3% 3%; background: #FFF8E1'>
-        <h3 style='text-align: center;'class='textcolor'> The Journey So Far </h3>
-        <p style='text-align: center;    font-size: 115%;'>
-          Just some of the things I've been doing in the past couple of years
+          <strong class='textcolor' style="font-size: 130%">
+                 Hello!
+                </strong> I'm a second year college student currently studying about about computer programming at Seneca College. I have a keen interest in web development and I want to pursue it further. I also like playing sports, reading,
+          and watching the TV shows!
         </p>
-        <hr class='adjustwidth'>
-        <div class='education'>
-          <h4 class='textcolor'> Education </h4>
-          <div class='mdl-grid'>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--4-col'>
-              <strong> Seneca College of Applied Arts and Technology </strong>
-              <br>
-              <p style='margin-top: 2%'> January 2016 - Present </p>
-            </div>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--8-col'>
-              <strong> Computer Programming and Analysis (CGPA: 3.7)</strong>
-              <br>
-              <span style='color: black; margin-top: 2%'>
+      </div>
+    </div>
+  </div>
+
+<div class='lightbackground'>
+  <div class='container' id='EnE'>
+    <div class='row content-center' style='padding-top: 5%; padding-bottom: 2%;'>
+      <h3 style='margin: auto'> Experience and Education </h3>
+    </div>
+    <div class='row'>
+    <span style='margin: auto'> The things I've been doing for the past couple of years </span>
+  </div>
+    <hr>
+
+    <div class='row'>
+      <h4> Education </h4>
+    </div>
+    <div class='row'>
+      <div class='col-sm-4'>
+        <strong> Seneca College of Applied Arts and Technology </strong>
+        <br>
+        <p style='margin-top: 2%'> January 2016 - Present </p>
+      </div>
+      <div class='col-sm-8'>
+        <strong> Computer Programming and Analysis (CGPA: 3.7)</strong>
+        <br>
+        <span style='color: black; margin-top: 2%'>
               For my first year we were primarily taught C-based programming such as C and C++,
-              but we were also able to learn about SQL, the web development languages such as HTML, CSS, PHP and more.
+              but we were also able to learn about SQL, the web development languages such as HTML, CSS, C# and more.
               I was also taught the importance of OOP, database management, and the basics of web development.
             </span>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
 
-        <div class='education'>
-          <h4 class='textcolor'> Experience </h4>
-          <div class='mdl-grid'>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--4-col'>
-              <strong> Royal Bank of Canada </strong>
-              <br>
-              <p style='margin-top: 2%'> August 2017 - December 2017 </p>
-            </div>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--8-col'>
-                <strong> Developer Co-op </strong>
-                <br>
-                <span style='color: black; margin-top: 2%'>
+    <div class='row'>
+      <h4> Experience </h4>
+    </div>
+
+    <div class='row'>
+      <div class='col-sm-4'>
+        <strong> Royal Bank of Canada </strong>
+        <br>
+        <p style='margin-top: 2%'> August 2017 - December 2017 </p>
+      </div>
+      <div class='col-sm-8'>
+        <strong> Developer Co-op </strong>
+        <br>
+        <span style='color: black; margin-top: 2%'>
                 After my time as a Business Systems Analyst ended I went on to become developer for an initiative called "The Student Labs".
                 We were given a problem statement and used design thinking to solve it.
                 What we came up with was a web application that runs machine learning and matching algorithms that would be used to simplify
                 the recruitment process and enhance the recruitment experience for all parties involved.
                 I was focused on developing the web aspect of the project, using web frameworks such as Angular 4 and Node.js.
                 Also, with help from my teammates, I was able to play around with, and get a a little bit of experience with Python for our algorithm work.
-              </span>
-                <br>
-                <i class="material-icons textcolor" class=''>location_on</i>
-                <span style='float: none'>Toronto, Ontario </span>
-            </div>
-          </div>
-          <div class='mdl-grid'>
-            <div style="font-size: 114%"class='mdl-cell mdl-cell--4-col'>
-              <strong> Royal Bank of Canada </strong>
-              <br>
-              <p style='margin-top: 2%'> January 2017 - August 2017 </p>
-            </div>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--8-col'>
-                <strong> Business Systems Analyst Co-op</strong>
-                <br>
-                <span style='color: black; margin-top: 2%'>
+          </span>
+        <br>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span style='float: none'>Toronto, Ontario </span>
+      </div>
+    </div>
+
+    <br>
+
+    <div class='row'>
+      <div class='col-sm-4'>
+        <strong> Royal Bank of Canada </strong>
+        <br>
+        <p style='margin-top: 2%'> January 2017 - August 2017 </p>
+      </div>
+      <div class='col-sm-8'>
+        <strong> Business Systems Analyst Co-op</strong>
+        <br>
+        <span style='color: black; margin-top: 2%'>
                 RBC is a financial institution in Canada and also the largest bank in Canada.
                 My first couple months was spent towards working on automating spreadsheets but soon after we decided to upgrade from a spreadsheet to a website.
                 We then started development, going through several iterations and technology changes along the way;
@@ -140,58 +177,80 @@ opacity: 3;
                 Through the application we were able to automate our reporting and as well as increase its frequency.
                 We were also able to establish a DevOps pipeline by using Git, Jenkins and UrbanCode to push this application and future applications into production.
               </span>
-                <br>
-                <i class="material-icons textcolor" class=''>location_on</i>
-                <span style='float: none'>Toronto, Ontario </span>
-            </div>
-          </div>
-          <div class='mdl-grid'>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--4-col'>
-              <strong> Carlo's No Frills </strong>
-              <br>
-              <p style='margin-top: 2%'> December 2014 - March 2016 </p>
-            </div>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--8-col'>
-                <strong> Cashier </strong>
-                <br>
-                <span style='color: black; margin-top: 2%'>
+        <br>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span style='float: none'>Toronto, Ontario </span>
+      </div>
+    </div>
+
+    <br>
+
+    <div class='row'>
+      <div class='col-sm-4'>
+        <strong> Carlo's No Frills </strong>
+        <br>
+        <p style='margin-top: 2%'> December 2014 - March 2016 </p>
+      </div>
+      <div class='col-sm-8'>
+
+        <strong> Cashier </strong>
+        <br>
+        <span style='color: black; margin-top: 2%'>
                   This was one of the first jobs I've ever held - I was a cashier for the grocery chain No Frills.
                   The nature of the job taught me vital communication and organizational skills.
                 </span>
-                <i class="material-icons textcolor" class=''>location_on</i>
-                <span style='float: none'>Toronto, Ontario </span>
-            </div>
-          </div>
-        </div>
-
-        <div class='education'>
-          <h4 class='textcolor'> Other Projects </h4>
-          <div class='mdl-grid'>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--4-col'>
-              <strong> Intuit SmallBiz Hackathon </strong>
-              <br>
-              <p> December 2017 </p>
-            </div>
-            <div style="font-size: 114%" class='mdl-cell mdl-cell--8-col'>
-              This was the first hackathon I've ever been to. I was in a team of four with my friends and the theme was on small businesses and how to help them using technology.
-              What we came up with was a community building platform to connect entrepreneurs with each other to enable growth.
-              We built this platform using the React.js framework.
-            </div>
-          </div>
-        </div>
+                <br>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span style='float: none'>Toronto, Ontario </span>
       </div>
+    </div>
 
-      <div id='skills' style='padding: 3% 3% 3% 3%;'>
-        <h3 style='text-align: center;' class='textcolor'> Abilities </h3>
-        <p style='text-align: center;    font-size: 115%;'>
-          These are languages and skills I've developed over the years along with how long I've been using them
-         </p>
-        <hr class='adjustwidth'>
-        <div class='education'>
-        <h4 style='color: #EB6E80; margin-bottom: -2%;'> Skillset </h4>
-        <div class='mdl-grid skillscontent'>
-          <div style="font-size: 105%" class='mdl-cell mdl-cell--6-col'>
-            <ul class='skills' style=''>
+    <div class='row'>
+      <h4>Other Projects</h4>
+    </div>
+
+    <div class='row'>
+      <div class='col-sm-4'>
+        <strong> Intuit SmallBiz Hackathon </strong>
+        <br>
+        <p> December 2017 </p>
+      </div>
+      <div class='col-sm-8'>
+        This was the first hackathon I've ever been to. I was in a team of four with my friends and the theme was on small businesses and how to help them using technology. What we came up with was a community building platform to connect entrepreneurs with each
+        other to enable growth. We built this platform using the React.js framework.
+      </div>
+    </div>
+
+    <br>
+
+    <div class='row'>
+      <div class='col-sm-4'>
+        <strong> EcoHacks </strong>
+        <br>
+        <p> February 2018 </p>
+      </div>
+      <div class='col-sm-8'>
+        Coming Soon...
+      </div>
+    </div>
+  </div>
+</div>
+  <div class='container' id='Skills'>
+    <div class='row content-center' style='padding-top: 5%; padding-bottom: 2%;'>
+      <h3 style='margin: auto'> Skills and Abilities </h3>
+    </div>
+    <div class='row'>
+    <span style='margin: auto'> The stuff I've learned along the way </span>
+    </div>
+    <hr>
+
+    <div class='row'>
+      <h4>Skillset</h4>
+    </div>
+
+    <div class='row'>
+      <div class='col-sm-5' style='margin:auto'>
+        <ul class='skills' style=''>
               <li> Angular 4 <span> < 1 Year </span></li>
               <li> Angular JS <span> < 1 Year </span></li>
               <li> React.js <span> < 1 Year  </span></li>
@@ -206,9 +265,9 @@ opacity: 3;
               <li> Node.js <span>1 Year</span></li>
               <li> PHP <span>2 Years</span></li>
             </ul>
-          </div>
-          <div style="font-size: 114%" class='mdl-cell mdl-cell--6-col'>
-            <ul class='skills' style=''>
+      </div>
+      <div class='col-sm-5'>
+        <ul class='skills' style=''>
               <li> Python <span> < 1 Year </span></li>
               <li> Java <span> < 1 Year</span></li>
               <li> C# <span> < 1 Year </span></li>
@@ -224,16 +283,17 @@ opacity: 3;
               <li> Problem Solving </li>
               <li> Adaptability </li>
             </ul>
-          </div>
-        </div>
       </div>
+    </div>
 
-      <div class='education'>
-      <h4 style='margin-bottom: -2%;'class='textcolor'> Tools and Platforms </h4>
-      <div class='mdl-grid skillscontent'>
-        <div style="font-size: 105%" class='mdl-cell mdl-cell--6-col'>
-          <ul class='skills' style=''>
-            <li> Windows <span> 7+ Years </span></li>
+    <div class='row'>
+      <h4> Tools and Platforms </h4>
+    </div>
+
+    <div class='row'>
+    <div class='col-sm-5' style='margin:auto'>
+      <ul class='skills' style=''>
+            <li> Windows <span> 10+ Years </span></li>
             <li> Mac <span> 1 Year </span></li>
             <li> Unix/Linux <span> 2 Years  </span></li>
             <li> IBM Bluemix <span> 1 Year </span></li>
@@ -241,9 +301,9 @@ opacity: 3;
             <li> Jenkins <span>1 Year</span></li>
             <li> UrbanCode <span>1 Year</span></li>
           </ul>
-        </div>
-        <div style="font-size: 114%" class='mdl-cell mdl-cell--6-col'>
-          <ul class='skills' style=''>
+    </div>
+    <div class='col-sm-5'>
+      <ul class='skills' style=''>
             <li> PostgreSQL <span>1 Years</span></li>
             <li> MS SQL <span>1 Year</span></li>
             <li> Oracle <span>2 Years</span></li>
@@ -251,53 +311,47 @@ opacity: 3;
             <li> Microsoft Visual Studio <span> 2 Years</span></li>
             <li> Microsoft Office <span> 7+ Years </span></li>
           </ul>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
+
+<div class='darkbackground'>
+<div class='container' id='contact'>
+  <div class='row' style='padding-top: 5%; padding-bottom: 2%;'>
+    <h3 style='margin: auto'>Contact Me</h3>
+  </div>
+  <div class='row'>
+  <span style='margin: auto'> Whether it's to chat or hang out, I'd love to hear from you  </span>
+  </div>
+  <hr>
+
+  <div class='row'>
+    <div class='col-sm-5' style='margin: auto'>
+      <ul>
+        <li>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <a class='whitelink' href="https://www.linkedin.com/in/lancevalera/">My LinkedIn</a>
+        </li>
+        <li>
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <a class='whitelink' href="https://github.com/lancevalera"> My GitHub </a>
+        </li>
+      </ul>
     </div>
-
-    <div id='Contact' style='padding: 3% 3% 3% 3%; background: #757575'>
-      <h3 style='text-align: center; color: #FFFFFF'> Contact Me </h3>
-      <p style='text-align: center; color: white;    font-size: 115%;'>
-        I'd love to hear from you
-      </p>
-      <hr class='adjustwidth' style='color: white'>
-      <div class='mdl-grid skillscontent education'>
-        <div class='mdl-cell mdl-cell--6-col'>
-          <ul id='horizontal-list' style='list-style-type:none;font-size: 105%; text-align: center'>
-            <li>
-              <i style='color: white;'class="material-icons md-48">phone</i>
-              <span style='float: none; color: white' class='md-48'>(416)895-1003</span>
-            </li>
-            <li>
-              <i style='color: white;'class="material-icons md-48">mail_outline</i>
-              <span style='float: none; color: white' class='md-48'>
-                <a style='color: white' href='mailto:lance.valera89@gmail.com'>lance.valera89@gmail.com</a>
-
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div class='mdl-cell mdl-cell--6-col'>
-          <ul id='horizontal-list' style='list-style-type:none;font-size: 105%; text-align: center'>
-
-            <li>
-              <i style='color: white;'class="material-icons md-48">face</i>
-              <span style='float: none; color: white' class='md-48'><a style='color: white' href='https://www.linkedin.com/in/lancevalera/'>My LinkedIn Profile </a></span>
-            </li>
-            <li>
-              <i style='color: white;'class="material-icons md-48">insert_drive_file</i>
-                <span style='float: none; color: white' class='md-48'>
-                  <a style='color: white' href='./ValeraResumeWinter2018.pdf' download='Lance_Valera_Resume.pdf'>My Resume </a>
-                </span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
+    <div class='col-sm-5'>
+      <ul>
+        <li>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a class='whitelink' href="mailto:lance.valera89@gmail.com">lance.valera89@gmail.com </a>
+        </li>
+        <li>
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
+</div>
 
-    </main>
-  </body>
+</body>
+
 </html>
