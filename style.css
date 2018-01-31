@@ -64,3 +64,12 @@ transform: translateY(-50%);
 .whitelink {
   color: #FFF
 }
+
+.skills > li > span {
+  float: right;
+  color: #ff652f;
+}
+
+.orangecolor {
+  color: #ff652f;
+}
